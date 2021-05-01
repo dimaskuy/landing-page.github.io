@@ -1,0 +1,246 @@
+/* ALL FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* MAIN STYLES */
+
+/* NAVBAR */
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+nav .navbar-brand {
+  font-family: 'Viga', arial, sans-serif;
+  font-size: 32px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+.join {
+  margin: 10px 0px;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background-image: url(https://i.ibb.co/jGmPzyv/jumbotron-bg.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%; height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.1));
+}
+
+.jumbotron .display-4 {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.jumbotron .display-4 span {
+  font-weight: bold;
+}
+
+/* PANEL INFO */
+.info-panel {
+  box-shadow: 0px 3px 20px rgba(0,0,0,.2);
+  border-radius: 20px;
+  margin-top: -100px;
+  padding: 30px;
+  background: #fff;
+}
+
+.info-panel img {
+  width: 95px;
+  height: 95px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #1c2c5d;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: 5px;
+  font-weight: 200;
+}
+
+.col-lg {
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 60px;
+  background: #acacac;
+  border: 4px solid #acacac;
+  border-radius: 50px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+/* WORKINGSPACE */
+.workingspace {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.workingspace h2 {
+  font-size: 52px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+.workingspace h2 span {
+  font-weight: bold;
+}
+
+.workingspace p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #acacac;
+  margin: 20px 0px;
+}
+
+/* TESTIMONI */
+.testimoni {
+  margin-top: 100px;
+}
+
+.testimoni h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.testimoni figure img {
+  width: 60px;
+  margin: 20px 10px 10px;
+  opacity: 0.5;
+}
+
+.testimoni figure img.utama {
+  width: 100px;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.testimoni figure h5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c2c5d;
+}
+
+.testimoni figure p {
+  color: #acacac;
+  font-style: italic;
+  margin-top: -5px;
+}
+
+
+/* UTILITY */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.8s;
+}
+.tombol:active { transform: scale(0.95); }
+
+.icon i {
+  font-size: 26px;
+  margin-right: 18px;
+  transition: 0.3s;
+}
+.icon i:hover {
+  color: #acacac !important;
+}
+
+/* UNTUK DESKTOP VERSION */
+@media (min-width: 992px) {
+
+  .navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 16px;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    border-bottom: none;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    border-bottom: 3px solid #0B63DC;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .join {
+    margin: 0px 0px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+    margin-top: 150px;
+  }
+
+  .col-lg {
+    margin-bottom: 0px;
+  }
+
+  hr { width: 10%; }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .testimoni h5 {
+    font-size: 30px;
+  }
+
+  .testimoni figure img {
+    margin: 20px 15px 10px;
+  }
+
+}
